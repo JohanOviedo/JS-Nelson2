@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 400px; /* Hacer el contenedor más pequeño */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label, .error {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    border: none;
+}
+
+button:hover {
+    background-color: #357ab7;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+/* Estilo para el contenedor de la tabla */
+.tabla-tareas {
+    width: 100%;
+    max-width: 500px; /* Tamaño limitado */
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la tabla de tareas */
+.tabla-tareas th, .tabla-tareas td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla-tareas th {
+    background-color: #f2f2f2;
+}
+
+.tabla-tareas td {
+    background-color: #fafafa;
+}
+
+.tabla-tareas td button {
+    padding: 5px;
+    font-size: 0.9em;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.tabla-tareas .completado {
+    background-color: #0fdd0f; /* Verde para tareas completadas */
+}
+
+.boton-estado {
+    background-color: #0eb916;
+    border: 1px solid #000;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.boton-estado.eliminar {
+    background-color: #e74c3c;
+    border: 1px solid #000;
+}
+
+/* Estilo para el botón de cierre de sesión */
+#botonCerrarSesion {
+    background-color: #e74c3c;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 1.1em;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+#botonCerrarSesion:hover {
+    background-color: #c0392b;
+}
+
+/* Ajustes generales para la visibilidad */
+#contenedorTareas {
+    display: none;
+    text-align: center;
+}
+
+#formularioRegistro, #formularioInicioSesion {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
